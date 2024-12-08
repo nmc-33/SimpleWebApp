@@ -17,4 +17,4 @@ def main():
 @app.route("/echo_user_input", methods=["POST"])
 def echo_input():
     input_text = request.form.get("user_input", "")
-    return "You entered: " + input_text + "\nstatus: 200"
+    return "You entered: " + input_text + "<br>status: 200 OK"
